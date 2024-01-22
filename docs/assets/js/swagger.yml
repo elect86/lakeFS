@@ -503,6 +503,10 @@ components:
         force:
           type: boolean
           default: false
+        allow_empty:
+          type: boolean
+          default: false
+          description: allow reverts without any changes
 
     CherryPickCreation:
       type: object

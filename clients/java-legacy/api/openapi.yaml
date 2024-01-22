@@ -6960,6 +6960,7 @@ components:
         ref: ref
         parent_number: 0
         force: false
+        allow_empty: false
       properties:
         ref:
           description: the commit to revert, given by a ref
@@ -6970,6 +6971,10 @@ components:
           type: integer
         force:
           default: false
+          type: boolean
+        allow_empty:
+          default: false
+          description: allow reverts without any changes
           type: boolean
       required:
       - parent_number
